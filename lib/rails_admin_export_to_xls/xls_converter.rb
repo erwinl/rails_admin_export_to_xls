@@ -1,4 +1,5 @@
 # encoding: UTF-8
+require 'spreadsheet'
 module RailsAdminExportToXls
   class XLSConverter
     UTF8_ENCODINGS = [nil, '', 'utf8', 'utf-8', 'unicode', 'UTF8', 'UTF-8', 'UNICODE', 'utf8mb4']
