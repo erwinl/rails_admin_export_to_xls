@@ -124,7 +124,7 @@ module RailsAdminExportToXls
       buffer = StringIO.new
       book.write(buffer)
 
-      [!options[:skip_header], @encoding_to.to_s, buffer.string]
+      [true, Encoding::UTF_8.to_s, buffer.string]
     end
 
   private
